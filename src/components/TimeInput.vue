@@ -1,6 +1,6 @@
 <template>
   <div class="mt-8">
-    <div>
+    <div data-test="timePickerContainer">
       <label
         data-test="timeInputLabel"
         class="block text-xl mb-2 text-gray-700"
