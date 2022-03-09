@@ -1,7 +1,12 @@
 <template>
   <div class="mt-8">
-    <label class="block text-xl mb-2 text-gray-700"> Your timezones </label>
-    <el-table class="max-w-[600px]" :data="cities">
+    <label
+      data-test="timezoneListLabel"
+      class="block text-xl mb-2 text-gray-700"
+    >
+      Your timezones
+    </label>
+    <el-table data-test="timezoneTable" class="max-w-[600px]" :data="cities">
       <el-table-column prop="label" label="City" />
       <el-table-column label="Time" width="80">
         <template #default="scope">

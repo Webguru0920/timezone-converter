@@ -53,7 +53,6 @@ const startTimer = () => {
 };
 
 const stopTimer = () => {
-  // clear old timer
   clearInterval(timer.value);
 };
 

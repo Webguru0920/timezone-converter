@@ -1,7 +1,8 @@
 <template>
   <div class="my-8">
-    <label class="block text-xl mb-2 text-gray-700"> City name </label>
+    <label data-test="cityAutoCompleteLabel" class="block text-xl mb-2 text-gray-700"> City name </label>
     <el-autocomplete
+      data-test="cityAutoComplete"
       v-model="query"
       :fetch-suggestions="querySearch"
       class="inline-input"
@@ -9,7 +10,7 @@
       value-key="label"
       @select="handleSelect"
     />
-    <el-button class="ml-2" :disabled="!isAddable" @click="addCity">
+    <el-button data-test="addCityButton" class="ml-2" :disabled="!isAddable" @click="addCity">
       Add
     </el-button>
   </div>
