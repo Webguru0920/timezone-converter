@@ -18,4 +18,5 @@ module.exports = {
       extends: ["plugin:cypress/recommended"],
     },
   ],
+  ignorePatterns: ["*.config.js"],
 };
