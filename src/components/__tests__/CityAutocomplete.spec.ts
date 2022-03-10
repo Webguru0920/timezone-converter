@@ -12,7 +12,9 @@ describe("CityAutocomplete", () => {
 
   it("renders properly", () => {
     const wrapper = mount(CityAutocomplete);
-    const cityAutoCompleteLabel = wrapper.find("[data-test='cityAutoCompleteLabel']");
+    const cityAutoCompleteLabel = wrapper.find(
+      "[data-test='cityAutoCompleteLabel']"
+    );
     expect(cityAutoCompleteLabel.text()).toContain("City name");
     const cityAutoComplete = wrapper.find("[data-test='cityAutoComplete']");
     expect(cityAutoComplete.exists()).toBe(true);
